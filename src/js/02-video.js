@@ -1,7 +1,8 @@
-import Player from '@vimeo/player';
-import throttle from 'lodash.throttle';
+require('@vimeo/player');
+const throttle = require('lodash.throttle');
 
-const player = new Player('vimeo-player');
+
+const player = new Vimeo.Player("vimeo-player");
 const KEY = 'videoplayer-current-time';
 
 
